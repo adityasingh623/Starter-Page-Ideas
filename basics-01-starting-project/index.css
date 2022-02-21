@@ -1,0 +1,56 @@
+body{
+    background-color: #000000;
+    flex-grow: 1;
+}
+
+#main-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 3rem;
+    color: #e9ecef;
+}
+
+#main-text::selection{
+    color: white;
+    background: #ffba0880;
+}
+
+main ul{
+    list-style-type: none;
+}
+
+main li{
+    padding-top: 4.5rem;
+}
+
+#gradient-button-text{
+    background: linear-gradient(to right, #d00000, #ffba08);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    transition: all 0.3s;
+}
+
+#gradient-button-text::selection{
+    color: #d0000080;
+}
+
+button{
+    background: none;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 3rem;
+    color: #f8f9fa;
+}
+
+#gradient-button-text:hover{
+    transform: translateY(-0.25rem);
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    border-width: 0.2rem;
+    border-style: solid;
+    box-sizing: border-box;
+    border-image: linear-gradient(45deg, #d00000 , #ffba08);
+    border-image-slice: 1;
+}
